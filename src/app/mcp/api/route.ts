@@ -19,14 +19,14 @@
 import genkitEndpoint from "@/lib/genkit-endpoint";
 import { genkit } from "genkit/beta";
 import { googleAI } from "@genkit-ai/google-genai";
-import { defineMcpClient } from "@genkit-ai/mcp";
+import { defineMcpClient, GenkitMcpClient } from "@genkit-ai/mcp";
 
 const ai = genkit({
   plugins: [googleAI()], // set the GOOGLE_API_KEY env variable
   model: googleAI.model("gemini-2.5-flash"),
 });
 
-let firebaseMcp: ReturnType<typeof defineMcpClient>;
+let firebaseMcp: GenkitMcpClient;
 
 export const POST = genkitEndpoint(async ({ system, messages, prompt }) => {
   if (!firebaseMcp) {
