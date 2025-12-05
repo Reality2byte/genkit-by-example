@@ -11,6 +11,7 @@
   "dependencies": {
     "@genkit-ai/firebase": "^1.25.0",
     "@genkit-ai/google-genai": "^1.25.0",
+    "@genkit-ai/mcp": "^1.25.0",
     "@radix-ui/react-avatar": "^1.1.2",
     "@radix-ui/react-dialog": "^1.1.5",
     "@radix-ui/react-label": "^2.1.1",
@@ -39,7 +40,8 @@
     "react-resizable-panels": "^2.1.7",
     "react-syntax-highlighter": "^15.6.1",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^4.1.13"
   },
   "devDependencies": {
     "@types/node": "^20",
